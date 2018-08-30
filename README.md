@@ -19,6 +19,9 @@
 
 内容如下：
 
+* ch02/hello-world：第一个Angular应用
+* ...
+
 ## 参考
 
 * http://www.typescriptlang.org/docs/handbook/tsconfig-json.html
