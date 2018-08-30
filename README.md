@@ -19,6 +19,10 @@
 
 内容如下：
 
+## 参考
+
+* http://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+
 ## Issue 意见、建议
 
 如有勘误、意见或建议欢迎拍砖 <https://github.com/waylau/angular-enterprise-application-development-samples/issues>
