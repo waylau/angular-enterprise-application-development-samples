@@ -1,4 +1,4 @@
-var x = 1; // 显式指定类型
+var x = 1;
 var y = 1;
 console.log('x in function before:' + x);
 console.log('y in function before:' + y);

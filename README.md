@@ -20,6 +20,7 @@
 内容如下：
 
 * ch02/hello-world：第一个Angular应用
+* ch03/typescript-demos：TypeScript基础案例
 * ...
 
 ## 参考
