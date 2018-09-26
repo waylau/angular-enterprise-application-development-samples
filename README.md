@@ -21,6 +21,8 @@
 
 * ch02/hello-world：第一个Angular应用
 * ch03/typescript-demos：TypeScript基础案例
+* ch04/user-management：用户管理的例子
+* ch05/basic-component：数据展示的例子
 * ...
 
 ## 参考
