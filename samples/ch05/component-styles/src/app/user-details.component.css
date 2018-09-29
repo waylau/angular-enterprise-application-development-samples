@@ -1,0 +1,19 @@
+/* The AOT compiler needs the `./` to show that this is local */
+@import './user-details-box.css';
+
+:host {
+  display: block;
+  border: 1px solid black;
+}
+
+:host(.active) {
+  border-width: 3px;
+}
+
+:host-context(.theme-light) h2 {
+  background-color: #eef;
+}
+
+:host /deep/ h3 {
+  font-style: italic;
+}
