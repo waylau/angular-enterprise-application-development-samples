@@ -1,7 +1,6 @@
 import { ApplicationRef, ComponentFactoryResolver, Injectable, Injector } from '@angular/core';
-import { NgElement, WithProperties } from '@angular/elements';
 import { PopupComponent } from './popup.component';
-
+import { NgElement, WithProperties } from '@angular/elements';
 
 @Injectable()
 export class PopupService {
@@ -10,6 +9,7 @@ export class PopupService {
               private componentFactoryResolver: ComponentFactoryResolver) {}	  // 动态加载方法
   // 在将弹出窗口添加到DOM之前，需要设置基础结构
   showAsComponent(message: string) {
+
     // 创建元素
     const popup = document.createElement('popup-component');
 
@@ -28,6 +28,7 @@ export class PopupService {
 
     // 添加到DOM
     document.body.appendChild(popup);
+
   }
 
   // 自定义元素的方法

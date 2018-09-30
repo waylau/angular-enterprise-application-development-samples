@@ -6,12 +6,13 @@ import { PopupComponent } from './popup.component';
 @Component({
   selector: 'app-root',
   template: `
-    <input #input value="Message">
-    <button (click)="popup.showAsComponent(input.value)">Show as component</button>
-    <button (click)="popup.showAsElement(input.value)">Show as element</button>
+    <input #input value="消息">
+    <button (click)="popup.showAsComponent(input.value)">显示动态加载组件</button>
+    <button (click)="popup.showAsElement(input.value)">显示自定义元素</button>
   `,
 })
 export class AppComponent {
+
   constructor(injector: Injector, public popup: PopupService) {
     // `PopupComponent`转为自定义元素
     const PopupElement = createCustomElement(PopupComponent, {injector});

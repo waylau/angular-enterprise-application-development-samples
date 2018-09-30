@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "custom-elements": {
+    "dynamic-component": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/custom-elements",
+            "outputPath": "dist/dynamic-component",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -25,11 +25,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [
-              {
-                "input": "node_modules/document-register-element/build/document-register-element.js"
-              }
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -54,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "custom-elements:build"
+            "browserTarget": "dynamic-component:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "custom-elements:build:production"
+              "browserTarget": "dynamic-component:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "custom-elements:build"
+            "browserTarget": "dynamic-component:build"
           }
         },
         "test": {
@@ -99,7 +95,7 @@
         }
       }
     },
-    "custom-elements-e2e": {
+    "dynamic-component-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -107,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "custom-elements:serve"
+            "devServerTarget": "dynamic-component:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "custom-elements:serve:production"
+              "devServerTarget": "dynamic-component:serve:production"
             }
           }
         },
@@ -127,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "custom-elements"
+  "defaultProject": "dynamic-component"
 }
