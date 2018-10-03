@@ -28,6 +28,7 @@
 * ch05/component-interaction：使用组件样式的例子
 * ch05/dynamic-component：动态加载组件的例子
 * ch05/custom-elements：使用自定义元素的例子
+* ch07/attribute-directives：使用属性型指令的例子
 * ...
 
 ## 参考

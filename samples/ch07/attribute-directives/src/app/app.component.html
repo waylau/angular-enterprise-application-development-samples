@@ -1,0 +1,19 @@
+<h1>使用属性型指令</h1>
+
+<h4>选择要高亮的样色</h4>
+<div>
+  <input type="radio" name="colors" (click)="color='lightgreen'">lightgreen
+  <input type="radio" name="colors" (click)="color='yellow'">yellow
+  <input type="radio" name="colors" (click)="color='cyan'">cyan
+</div>
+<p [appHighlight]="color">元素高亮</p>
+
+<p [appHighlight]="color" defaultColor="violet">
+  元素高亮
+</p>
+
+<hr>
+<p><i>固定颜色高亮</i></p>
+
+<p [appHighlight]="'yellow'">元素高亮yellow</p>
+<p appHighlight="orange">元素高亮orange</p>
