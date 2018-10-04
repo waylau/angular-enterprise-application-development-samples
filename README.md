@@ -29,6 +29,7 @@
 * ch05/dynamic-component：动态加载组件的例子
 * ch05/custom-elements：使用自定义元素的例子
 * ch07/attribute-directives：使用属性型指令的例子
+* ch07/structural-directives：自定义结构型指令 
 * ...
 
 ## 参考
