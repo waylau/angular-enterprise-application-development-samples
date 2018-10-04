@@ -1,0 +1,31 @@
+
+<h1>管道的例子</h1>
+
+<hr>
+<a id="happy-birthday"></a>
+<h2>使用DatePipe</h2>
+<app-user-birthday></app-user-birthday>
+
+<hr>
+<a id="app-currency-pipe"></a>
+<h2>使用CurrencyPipe</h2>
+<app-currency-pipe></app-currency-pipe>
+
+<hr>
+<a id="app-percent-pipe"></a>
+<h2>使用PercentPipe</h2>
+<app-percent-pipe></app-percent-pipe>
+
+<hr>
+<a id="birthday-pipe-chaining"></a>
+<h2>链式管道</h2>
+<p>
+  用户的生日是
+  {{ birthday | date:'fullDate' | uppercase}}
+</p>
+
+<hr>
+<h2>计算X的Y次方</h2>
+<a id="app-pow-calculator"></a>
+<app-pow-calculator>loading</app-pow-calculator>
+
