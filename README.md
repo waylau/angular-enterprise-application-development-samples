@@ -31,6 +31,7 @@
 * ch07/attribute-directives：使用属性型指令的例子
 * ch07/structural-directives：自定义结构型指令 
 * ch08/pipes：使用管道的例子
+* ch09/animations：使用动画的例子
 * ...
 
 ## 参考
