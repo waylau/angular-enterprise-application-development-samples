@@ -33,6 +33,7 @@
 * ch08/pipes：使用管道的例子
 * ch09/animations：使用动画的例子
 * ch10/forms：使用表单的例子
+* ch10/user-input：获取用户输入的例子
 * ...
 
 ## 参考

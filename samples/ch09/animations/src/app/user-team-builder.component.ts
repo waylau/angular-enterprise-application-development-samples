@@ -5,12 +5,6 @@ import { User, UserService } from './user.service';
 @Component({
   selector: 'app-root',
   template: `
-    <div class="buttons">
-      <button [disabled]="!userService.canAdd()" (click)="userService.addInactive()">Add inactive user</button>
-      <button [disabled]="!userService.canAdd()" (click)="userService.addActive()">Add active user</button>
-      <button [disabled]="!userService.canRemove()" (click)="userService.remove()">Remove user</button>
-    </div>
-
     <h1>动画示例</h1>
 
     <hr>
