@@ -32,6 +32,7 @@
 * ch07/structural-directives：自定义结构型指令 
 * ch08/pipes：使用管道的例子
 * ch09/animations：使用动画的例子
+* ch10/forms：使用表单的例子
 * ...
 
 ## 参考
