@@ -1,0 +1,63 @@
+<div class="container">
+
+  <h1>模型驱动用户表单</h1>
+  <form #userForm="ngForm" appIdentityRevealed>
+    <div [hidden]="userForm.submitted">
+      <div class="cross-validation" [class.cross-validation-error]="userForm.errors?.identityRevealed && (userForm.touched || userForm.dirty)">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" name="name" class="form-control" 
+                required minlength="2" appForbiddenName="老卫"
+                [(ngModel)]="user.name" #name="ngModel" >
+
+          <div *ngIf="name.invalid && (name.dirty || name.touched)"
+              class="alert alert-danger">
+
+            <div *ngIf="name.errors.required">
+              姓名不能为空
+            </div>
+            <div *ngIf="name.errors.minlength">
+              姓名至少2个字符长度
+            </div>
+            <div *ngIf="name.errors.forbiddenName">
+              姓名不能是老卫
+            </div>
+
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="age">年龄</label>
+          <input id="age" class="form-control"
+                name="age" [(ngModel)]="user.age" >
+        </div>
+
+        <div *ngIf="userForm.errors?.identityRevealed && (userForm.touched || userForm.dirty)" class="cross-validation-error-message alert alert-danger">
+          姓名不能与年龄相符
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="job">user Power</label>
+        <select id="job" name="job" class="form-control"
+                required [(ngModel)]="user.job" #job="ngModel" >
+          <option *ngFor="let jo of jobs" [value]="jo">{{jo}}</option>
+        </select>
+
+        <div *ngIf="job.errors && job.touched" class="alert alert-danger">
+          <div *ngIf="job.errors.required">职业必须要选</div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-default"
+              [disabled]="userForm.invalid">Submit</button>
+      <button type="button" class="btn btn-default"
+              (click)="userForm.resetForm({})">Reset</button>
+    </div>
+  </form>
+
+  <div class="submitted-message" *ngIf="userForm.submitted">
+    <p>所提交的用户姓名是 {{ userForm.value.name }}!</p>
+    <button (click)="userForm.resetForm({})">新增用户</button>
+  </div>
+</div>

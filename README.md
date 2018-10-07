@@ -34,6 +34,7 @@
 * ch09/animations：使用动画的例子
 * ch10/forms：使用表单的例子
 * ch10/user-input：获取用户输入的例子
+* ch10/form-validation：表单验证的例子
 * ...
 
 ## 参考
