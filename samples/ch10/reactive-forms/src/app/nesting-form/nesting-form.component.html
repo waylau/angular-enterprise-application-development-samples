@@ -1,0 +1,39 @@
+<form [formGroup]="nestingForm" (ngSubmit)="onSubmit()">
+  
+  <label>
+    名字:
+    <!--
+      <input type="text" formControlName="firstName">
+    -->
+
+    <!--增加校验，设为必填-->
+    <input type="text" formControlName="firstName" required>
+  </label>
+
+  <label>
+    姓氏:
+    <input type="text" formControlName="lastName">
+  </label>
+
+  <div formGroupName="address">
+    <h3>地址</h3>
+
+    <label>
+      城市:
+      <input type="text" formControlName="city">
+    </label>
+
+      
+    <label>
+      街道:
+      <input type="text" formControlName="street">
+    </label>
+  
+  </div>
+
+  <button type="submit" [disabled]="!nestingForm.valid">Submit</button>
+
+  <p>
+    <button (click)="updateProfile()">更新</button>
+  </p>
+</form>

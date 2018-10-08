@@ -1,0 +1,16 @@
+<div>
+  <form (ngSubmit)="onSubmit()" [formGroup]="form">
+
+    <div *ngFor="let question of questions" class="form-row">
+      <app-dynamic-form-question [question]="question" [form]="form"></app-dynamic-form-question>
+    </div>
+
+    <div class="form-row">
+      <button type="submit" [disabled]="!form.valid">保存</button>
+    </div>
+  </form>
+
+  <div *ngIf="payLoad" class="form-row">
+    <strong>保存的数据是</strong><br>{{payLoad}}
+  </div>
+</div>

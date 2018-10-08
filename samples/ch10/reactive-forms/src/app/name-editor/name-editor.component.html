@@ -1,0 +1,13 @@
+<label>
+  姓名:
+  <input type="text" [formControl]="name">
+</label>
+
+<p>
+  当前值: {{ name.value }}
+</p>
+
+
+<p>
+  <button (click)="updateName()">更新姓名</button>
+</p>
