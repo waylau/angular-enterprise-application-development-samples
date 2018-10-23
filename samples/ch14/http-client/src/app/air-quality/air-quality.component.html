@@ -1,0 +1,14 @@
+<button (click)="showAirQualityData()">获取数据</button>
+<button (click)="showAirQualityResponse()">获取数据及HTTP头</button>
+<div *ngIf="airQuality">
+   <div>状态：{{ airQuality.status }}</div>
+   <div>AQI：{{ airQuality.data.aqi }}</div>
+   <div>更新时间：{{ airQuality.data.time.s }}</div>
+   <div *ngIf="headers">
+    HTTP头
+    <ul>
+      <li *ngFor="let header of headers">{{header}}</li>
+    </ul>
+  </div>
+</div>
+<p *ngIf="error" class="error">{{error | json}}</p>
