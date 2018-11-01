@@ -39,6 +39,7 @@
 * ch12/customer-app：惰性加载特性模块的例子
 * ch13/dependency-injection：依赖注入的例子
 * ch14/http-client：HttpClient的例子
+* ch15/router：路由器的例子
 * ...
 
 ## 参考
