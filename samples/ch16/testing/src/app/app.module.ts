@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { LightswitchComponent } from './lightswitch/lightswitch.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LightswitchComponent
   ],
   imports: [
     BrowserModule
