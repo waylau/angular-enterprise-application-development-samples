@@ -1,0 +1,15 @@
+<!--管道方式-->
+<h1>
+  {{ 'title' | translate }}
+</h1>
+
+<!--指令方式（key 作为属性）-->
+<h1 [translate]="'title'">
+</h1>
+
+<!--指令方式（key 作为元素的内容）-->
+<p translate>title</p>
+
+<!--切换语言用的按钮-->
+<button (click)="useLanguage('en')">英文</button>
+<button (click)="useLanguage('zh')">中文</button>
