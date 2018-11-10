@@ -41,6 +41,8 @@
 * ch14/http-client：HttpClient的例子
 * ch15/router：路由器的例子
 * ch16/testing：测试的例子
+* ch17/i18n：通过i18n工具来实现国际化
+* ch17/ngx-translate：通过ngx-translate插件来实现国际化
 * ...
 
 ## 参考
