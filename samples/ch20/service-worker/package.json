@@ -1,5 +1,5 @@
 {
-  "name": "universal",
+  "name": "service-worker",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -19,13 +19,11 @@
     "@angular/http": "~7.0.0",
     "@angular/platform-browser": "~7.0.0",
     "@angular/platform-browser-dynamic": "~7.0.0",
-    "@angular/platform-server": "^7.0.3",
+    "@angular/pwa": "^0.10.5",
     "@angular/router": "~7.0.0",
-    "@nguniversal/express-engine": "^7.0.2",
-    "@nguniversal/module-map-ngfactory-loader": "^7.0.2",
+    "@angular/service-worker": "~7.0.0",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
-    "ts-loader": "^5.3.0",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {

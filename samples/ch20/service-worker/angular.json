@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "universal": {
+    "service-worker": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,14 +13,15 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/universal",
+            "outputPath": "dist/service-worker",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.json"
             ],
             "styles": [
               "src/styles.css"
@@ -50,33 +51,26 @@
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
                 }
-              ]
+              ],
+              "serviceWorker": true
             }
           }
         },
-        "server": {
-          "builder": "@angular-devkit/build-angular:server",
-          "options": {
-            "outputPath": "dist/universal-server",
-            "main": "src/main.server.ts",
-            "tsConfig": "src/tsconfig.server.json"
-          }
-        },      
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "universal:build"
+            "browserTarget": "service-worker:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "universal:build:production"
+              "browserTarget": "service-worker:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "universal:build"
+            "browserTarget": "service-worker:build"
           }
         },
         "test": {
@@ -92,7 +86,8 @@
             "scripts": [],
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.json"
             ]
           }
         },
@@ -110,7 +105,7 @@
         }
       }
     },
-    "universal-e2e": {
+    "service-worker-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -119,11 +114,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "universal:serve"
+            "devServerTarget": "service-worker:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "universal:serve:production"
+              "devServerTarget": "service-worker:serve:production"
             }
           }
         },
@@ -139,5 +134,5 @@
       }
     }
   },
-  "defaultProject": "universal"
+  "defaultProject": "service-worker"
 }
