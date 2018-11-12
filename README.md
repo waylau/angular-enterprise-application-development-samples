@@ -45,6 +45,7 @@
 * ch17/ngx-translate：通过ngx-translate插件来实现国际化
 * ch19/universal：Universal使用的例子
 * ch20/service-worker：使用ServiceWorker的例子
+* ch21/news-headlines：News Headlines应用骨架
 * ...
 
 ## 参考
