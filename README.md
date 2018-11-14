@@ -46,6 +46,7 @@
 * ch19/universal：Universal使用的例子
 * ch20/service-worker：使用ServiceWorker的例子
 * ch21/news-headlines：News Headlines应用骨架
+* ch22/news-headlines：News Headlines首页原型
 * ...
 
 ## 参考
