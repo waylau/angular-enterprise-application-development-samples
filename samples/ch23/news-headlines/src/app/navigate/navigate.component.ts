@@ -19,6 +19,7 @@ export class NavigateComponent implements OnInit {
   // 初始化时就要获取数据
   ngOnInit() {
     this.showCategoryData();
+    //console.log(this.categoryService.getData());
   }
 
   // 指定参数类型CategoryMsg

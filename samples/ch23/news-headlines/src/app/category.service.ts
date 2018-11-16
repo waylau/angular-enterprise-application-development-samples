@@ -9,8 +9,8 @@ export class CategoryService {
 
   // 新闻分类API地址
   //categoryApiUrl = 'https://api.xinwen.cn/news/category?signature=5c276aa9b88c3aca42f1e5453461b47b&access_key=R7kTDQi46gPmnOuw&timestamp=1542298262302';
-  categoryApiUrl = '/news/category?' +
-   'signature=6537eefc7c084d318e16eaff2d42c2e6&access_key=R7kTDQi46gPmnOuw&timestamp=1542299769028';
+
+  categoryApiUrl = 'http://v.juhe.cn/toutiao/index?type=top&key=d95eb2c02b12e841bafb5a49d20924be';
 
   // 注入HttpClient
   constructor(private http: HttpClient) { }
@@ -21,18 +21,14 @@ export class CategoryService {
       this.httpOptions); // 设置Http头
   }
 
+  getData() {
+      return this.http.get<string>(this.categoryApiUrl);
+  }
+
   // 解决跨域访问资源
   private httpOptions: Object = {
     headers: new HttpHeaders({ 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Credentials': 'true',
   'access-control-allow-methods': 'GET, POST, OPTIONS, PUT, DELETE', 'Content-Type': 'application/json' })
   }
 
-  /*
-  httpOptions = {
-    headers: new HttpHeaders({
-      'Content-Type':  'application/json',
-      'Authorization': 'my-auth-token'
-    })
-  }
-  */
 }
