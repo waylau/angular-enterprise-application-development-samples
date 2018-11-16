@@ -25,7 +25,7 @@ import { NewsComponent } from './news/news.component';
     BrowserAnimationsModule,
     FormsModule, MatButtonModule, MatIconModule, MatFormFieldModule, MatInputModule, // 用于搜索栏
     MatToolbarModule, MatTabsModule, // 用于导航栏
-    MatCardModule, MatDividerModule, // 用于新闻列表
+    MatCardModule, MatDividerModule,// 用于新闻列表
 
   ],
   providers: [],

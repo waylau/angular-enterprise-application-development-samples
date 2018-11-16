@@ -7,5 +7,5 @@
   <mat-tab label="国际"></mat-tab>
   <mat-tab label="娱乐"></mat-tab>
   <mat-tab label="科技"></mat-tab>
-  <mat-tab label="科技"></mat-tab>
+  <mat-tab  *ngFor="let category of categories" >{{category.string}}</mat-tab>
 </mat-tab-group>
