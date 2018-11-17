@@ -49,9 +49,10 @@
 * ch22/news-headlines：News Headlines首页原型
 * ...
 
-## 参考
+## 参考文献
 
 * http://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+* https://material.angular.io/components
 
 ## Issue 意见、建议
 

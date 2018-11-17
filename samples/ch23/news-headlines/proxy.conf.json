@@ -1,5 +1,5 @@
 {
-  "/": {
+  "http://ap": {
     "target": "https://api.xinwen.cn",
     "secure": false
   }

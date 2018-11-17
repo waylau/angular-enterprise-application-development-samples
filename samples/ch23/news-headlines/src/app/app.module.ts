@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from '@angular/common/http'; // 导入HttpClient需要的模块
+import { HttpClientModule,HttpClientJsonpModule } from '@angular/common/http'; // 导入HttpClient需要的模块
 
 import {
   MatButtonModule, MatIconModule, MatToolbarModule, MatCardModule,
@@ -27,7 +27,8 @@ import { NewsComponent } from './news/news.component';
     FormsModule, MatButtonModule, MatIconModule, MatFormFieldModule, MatInputModule, // 用于搜索栏
     MatToolbarModule, MatTabsModule, // 用于导航栏
     MatCardModule, MatDividerModule,// 用于新闻列表
-    HttpClientModule // 导入HttpClient需要的模块
+    HttpClientModule, // 导入HttpClient需要的模块
+    HttpClientJsonpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

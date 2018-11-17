@@ -1,11 +1,5 @@
-<mat-tab-group backgroundColor="primary" >
-  <mat-tab label="首页"></mat-tab>
-  <mat-tab label="时政"></mat-tab>
-  <mat-tab label="军事"></mat-tab>
-  <mat-tab label="社会"></mat-tab>
-  <mat-tab label="财经"></mat-tab>
-  <mat-tab label="国际"></mat-tab>
-  <mat-tab label="娱乐"></mat-tab>
-  <mat-tab label="科技"></mat-tab>
-  <mat-tab  *ngFor="let category of categories" >{{category.string}}</mat-tab>
+<mat-tab-group backgroundColor="primary" (selectedIndexChange)="handleTab($event)">
+  <mat-tab *ngFor="let category of categories" 
+  label="{{category.name}}" >
+  </mat-tab>
 </mat-tab-group>
