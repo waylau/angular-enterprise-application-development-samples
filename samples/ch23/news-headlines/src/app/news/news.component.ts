@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NewsService } from './../news.service';
-import { NewsMsg, News } from './../news';
+import { NewsMsg } from './../news';
 
 @Component({
   selector: 'app-news',
@@ -19,9 +19,9 @@ export class NewsComponent implements OnInit {
   ngOnInit() {
     this.showNewsData();
 
-    this.newsService.tabSelected.subscribe(tab => {
-      this.tabSelected(tab);
-
+    // 监听新闻分类切换的事件
+    this.newsService.tabSelected.subscribe(alias => {
+      this.tabSelected(alias);
       this.showNewsData();
     });
   }
@@ -29,15 +29,13 @@ export class NewsComponent implements OnInit {
   // 指定参数类型NewsMsg
   showNewsData() {
     this.newsService.getNewsData().subscribe(
-      //(newsApiData) =>   console.log(newsApiData),
-      //(error) => console.log(error)
       (newsApiData: NewsMsg) => this.news = newsApiData.result.data
     );
   }
 
   // 接收选中Tab的事件
-  tabSelected(tab: string) {
-    this.newsService.setAlias(tab);
+  tabSelected(alias: string) {
+    this.newsService.setAlias(alias);
   }
 
 }

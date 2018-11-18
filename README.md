@@ -47,6 +47,7 @@
 * ch20/service-worker：使用ServiceWorker的例子
 * ch21/news-headlines：News Headlines应用骨架
 * ch22/news-headlines：News Headlines首页原型
+* ch23/news-headlines：News Headlines导航栏
 * ...
 
 ## 参考文献
