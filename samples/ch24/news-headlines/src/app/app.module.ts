@@ -14,13 +14,15 @@ import { NavigateComponent } from './navigate/navigate.component';
 import { NewsComponent } from './news/news.component';
 import { NewsDetailComponent } from './news-detail/news-detail.component';
 import { AppRoutingModule } from './app-routing.module';
+import { IndexComponent } from './index/index.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigateComponent,
     NewsComponent,
-    NewsDetailComponent
+    NewsDetailComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,

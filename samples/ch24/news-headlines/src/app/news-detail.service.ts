@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -11,8 +12,9 @@ export class NewsDetailService {
 
   // 指定参数类型NewsMsg
   getNewsData(newsApiUrl: string) {
-    newsApiUrl = 'http://mini.eastday.com//mobile//181118152309088.html';
-    return this.http.get(newsApiUrl);
+    return this.http.get(newsApiUrl,
+      { responseType: 'text' }   // 处理HTML的类型
+    );
   }
 
 }

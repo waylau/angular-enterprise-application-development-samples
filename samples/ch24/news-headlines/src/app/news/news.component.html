@@ -1,16 +1,18 @@
 <mat-card *ngFor="let n of news" (tabSelected)="tabSelected($event)">
-  <mat-card-header>
-    <mat-card-subtitle>{{n.title}}</mat-card-subtitle>
-  </mat-card-header>
+  <a routerLink="/news" [queryParams]="{ newsUrl : n.url }" > <!--点击路由到新闻详情页面-->
+    <mat-card-header>
+      <mat-card-subtitle>{{n.title}}</mat-card-subtitle>
+    </mat-card-header>
 
-  <mat-card-content>
-    <mat-toolbar>
-      <mat-toolbar-row>
-        <img src="{{n.thumbnail_pic_s}}">
-        <img src="{{n.thumbnail_pic_s02}}">
-        <img src="{{n.thumbnail_pic_s03}}">
-      </mat-toolbar-row>
-    </mat-toolbar>
-  </mat-card-content>
+    <mat-card-content>
+      <mat-toolbar>
+        <mat-toolbar-row>
+          <img src="{{n.thumbnail_pic_s}}">
+          <img src="{{n.thumbnail_pic_s02}}">
+          <img src="{{n.thumbnail_pic_s03}}">
+        </mat-toolbar-row>
+      </mat-toolbar>
+    </mat-card-content>
+  </a>
   <mat-divider></mat-divider>
 </mat-card>

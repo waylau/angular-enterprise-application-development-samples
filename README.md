@@ -48,6 +48,7 @@
 * ch21/news-headlines：News Headlines应用骨架
 * ch22/news-headlines：News Headlines首页原型
 * ch23/news-headlines：News Headlines导航栏
+* ch24/news-headlines：News Headlines新闻详情
 * ...
 
 ## 参考文献
