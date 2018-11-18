@@ -10,14 +10,12 @@ import {
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
-import { SearchComponent } from './search/search.component';
 import { NavigateComponent } from './navigate/navigate.component';
 import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchComponent,
     NavigateComponent,
     NewsComponent
   ],
