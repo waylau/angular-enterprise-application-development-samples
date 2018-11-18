@@ -1,0 +1,5 @@
+<mat-tab-group backgroundColor="primary" (selectedIndexChange)="handleTab($event)">
+  <mat-tab *ngFor="let category of categories" 
+  label="{{category.name}}" >
+  </mat-tab>
+</mat-tab-group>
