@@ -8,8 +8,8 @@ import { NewsDetailComponent } from './news-detail/news-detail.component';
 
 
 const routes: Routes = [
-  { path: '', component: IndexComponent },
-  { path: 'news', component: NewsDetailComponent}
+  { path: '', component: IndexComponent },  // 首页
+  { path: 'news', component: NewsDetailComponent} // 新闻详情
 ];
 
 
