@@ -1,3 +1,3 @@
 let notSure: any = 4;
-notSure = "maybe a string instead";
-notSure = false; // okay, definitely a boolean
+notSure = "也许是字符串";
+notSure = false; // 现在是boolean

@@ -8,7 +8,8 @@
 本书涉及的相关技术及版本如下。
 
 * VSCodeUserSetup-x64-1.26.1
-* Angular 6.1.5
+* Angular 7.0.4
+* Angular CLI 7.0.7
 * Node.js 10.9.0
 * npm 6.2.0
 
