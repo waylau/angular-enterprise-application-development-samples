@@ -1,5 +1,7 @@
-/* tslint:disable:member-ordering */
-import { Directive, ElementRef, HostListener, Input } from '@angular/core';
+import { Directive, //用于提供@Directive装饰器
+  ElementRef,  //来引用宿主DOM元素
+  HostListener,  //引用属性型指令的宿主元素
+  Input } from '@angular/core';
 
 @Directive({
   selector: '[appHighlight]'
