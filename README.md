@@ -40,7 +40,7 @@ Angular 的使用，以简化企业级应用的开发。
 * ch05/basic-component：数据展示的例子
 * ch05/lifecycle：生命周期钩子的例子
 * ch05/component-interaction：组件交互方式
-* ch05/component-interaction：使用组件样式的例子
+* ch05/component-style：使用组件样式的例子
 * ch05/dynamic-component：动态加载组件的例子
 * ch05/custom-elements：使用自定义元素的例子
 * ch07/attribute-directives：使用属性型指令的例子
