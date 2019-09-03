@@ -17,7 +17,7 @@ export class NewsDetailComponent implements OnInit {
 
   constructor(private newsDetailService: NewsDetailService,
     private domSanitizer: DomSanitizer,
-    private route: ActivatedRoute,  
+    private route: ActivatedRoute,
     private location: Location) { }
 
   ngOnInit() {
@@ -26,12 +26,15 @@ export class NewsDetailComponent implements OnInit {
 
   // 展示新闻详情数据
   showNewsDetailData() {
-    this.route.queryParams.subscribe(p => this.newsUrl = p.newsUrl);// 获取参数
+    this.route.queryParams.subscribe(p => {
+      this.newsUrl = p.newsUrl // 获取参数
 
-    this.newsDetailService.getNewsData(this.newsUrl).subscribe(
-      (newsApiData) => this.newsDetailData =
-        this.domSanitizer.bypassSecurityTrustHtml(newsApiData.toString()) //HTML过滤
-    );
+      this.newsDetailService.getNewsData(this.newsUrl).subscribe(
+        (newsApiData) => this.newsDetailData =
+          this.domSanitizer.bypassSecurityTrustHtml(newsApiData.toString()) //HTML过滤
+      );
+
+    });
   }
 
   // 返回
