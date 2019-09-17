@@ -64,7 +64,7 @@
 
 ## 配套书籍《Angular企业级应用开发实战》
 
-与该源码配套的书籍《Angular企业级应用开发实战》已经出版，内容详见全书[目录](SUMMARY.md) <images/SUMMARY.jpg>。
+与该源码配套的书籍《Angular企业级应用开发实战》已经出版，内容详见全书[目录](SUMMARY.md)。
 
 ![](images/angular-book.jpg)
 
