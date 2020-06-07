@@ -85,7 +85,13 @@
 * [亚马逊](https://www.amazon.cn/s?k=柳伟卫+Angular企业级应用开发实战&__mk_zh_CN=亚马逊网站&ref=nb_sb_noss)
 
 
-也可以直接关注我博客（<https://waylau.com/>）或者我的开源书（<https://waylau.com/books/>）。
+
+想低于市价得到本书？来[二手书集市](https://github.com/waylau/second-hand-books)试试看。
+
+
+也可以直接关注我博客（<https://waylau.com/>）或者我的开源书（<https://waylau.com/books/>）了解更多免费咨询。
+
+
 
 
 ## 联系作者
